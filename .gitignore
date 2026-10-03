@@ -5,3 +5,4 @@
 !*.h
 !*/makefile
 !new.sh
+!doctest.h
