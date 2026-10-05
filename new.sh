@@ -7,16 +7,13 @@ cd "$(dirname "$0")"
 mkdir "$1" && cd "$1"
 
 cat > main.cpp <<'EOF'
-#include<iostream>
-#include<vector>
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include"../doctest.h"
 #include"solution.h"
 
-using namespace std;
-
-int main(){
+TEST_CASE("examples"){
     Solution s;
-
-    return 0;
+    // CHECK(s.func(input) == expected);
 }
 EOF
 
